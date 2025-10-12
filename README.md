@@ -1,9 +1,10 @@
 # 🚦 Seoul Traffic Accident Risk Area Analysis
 
 서울특별시의 자치구별 교통사고 다발 지역 데이터를 수집하고,  
-PostgreSQL(PostGIS) 및 QGIS를 활용하여 시각화·분석한 프로젝트입니다.
+PostgreSQL(PostGIS) 및 QGIS를 활용하여 시각화하였고, 
+Jupyter Notebook에서 EDA, 통계적 가설 검정을 진행한 프로젝트입니다.
 
----
+
 
 ## 📂 파일 구성
 
@@ -16,22 +17,15 @@ PostgreSQL(PostGIS) 및 QGIS를 활용하여 시각화·분석한 프로젝트�
 | `gis_accident.qgz` | QGIS 시각화 프로젝트 파일 |
 | `gis.csv` | 원본 교통사고 위험지역 데이터 |
 
----
+
 
 ## 🗺️ 데이터 개요
 
 - **출처:** [도로교통공단 교통사고 위험지역 OpenAPI](https://opendata.koroad.or.kr/api/selectAcdntRiskAreaDataSet.do)  
 - **범위:** 서울특별시 25개 자치구  
-- **내용:** 반경 50m 내에서 8건 이상 사고 발생 지역  
-- **주요 필드:**  
-  - `gu`: 자치구명  
-  - `year`: 발생연도  
-  - `tot_acc_cnt`: 사고건수  
-  - `tot_dth_dnv_cnt`: 사망자수  
-  - `tot_se_dnv_cnt`, `tot_sl_dnv_cnt`: 중상자 / 경상자 수  
-  - `cause_anals_ty_nm`: 주요 사고 원인  
+- **내용:** 반경 50m 내에서 8건 이상 사고 발생 지역
 
----
+
 
 ## 🔍 분석 내용 요약
 
@@ -49,7 +43,7 @@ PostgreSQL(PostGIS) 및 QGIS를 활용하여 시각화·분석한 프로젝트�
    - 단일 vs 복합 사고의 사망률 차이 검정 (t-test / Mann–Whitney U)  
    - 사고 원인 수와 사망률의 상관관계 분석  
 
----
+
 
 ## 🧭 QGIS 시각화
 
@@ -57,16 +51,7 @@ PostgreSQL(PostGIS) 및 QGIS를 활용하여 시각화·분석한 프로젝트�
   **사고 위험도 단계(7단계 색상 등급)** 로 시각화  
 - 상위 등급일수록 **진한 빨강 → 노랑 → 연두색**으로 구분
 
----
 
-## ⚙️ 기술 스택
-
-- **Python** (pandas, matplotlib, seaborn)
-- **PostgreSQL + PostGIS**
-- **QGIS 3.40**
-- **공공데이터포털 OpenAPI**
-
----
 
 ## 🧾 License
 

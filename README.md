@@ -54,8 +54,3 @@ Jupyter Notebook에서 EDA, 통계적 가설 검정을 진행한 프로젝트입
 예시)
 ![QGIS 시각화 결과](https://github.com/user-attachments/assets/fc3740bb-1736-4e83-a787-43c63b385ff8)
 
-
-
-## 🧾 License
-
-본 프로젝트는 학습 및 비영리 연구 목적의 데이터 분석 예시로 사용됩니다.

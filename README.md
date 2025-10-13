@@ -50,7 +50,7 @@ Jupyter Notebook에서 EDA, 통계적 가설 검정을 진행한 프로젝트입
 - PostGIS 기반 뷰(`vw_gis_accident_frequency`, `vw_gis_accident_fatality`)를 불러와  
   **사고 위험도 단계(7단계 색상 등급)** 로 시각화  
 - 사고 위험도 상위 등급부터 **진한 빨강 → 노랑 → 연두색**으로 구분 (등급 숫자가 낮을수록 위험도가 높은 지역)
-- 지도 상의 사고 지점을 마우스로 선택하면, 해당 구역의 사고 건수 및 위험 등급을 시각적으로 확인할 수 있다.
+- 지도 상의 사고 지점을 마우스로 선택하면, 해당 구역의 사고 건수 및 위험 등급 등을 시각적으로 확인할 수 있다.
 
 예시)
 ![QGIS 시각화 결과](https://github.com/user-attachments/assets/fc3740bb-1736-4e83-a787-43c63b385ff8)

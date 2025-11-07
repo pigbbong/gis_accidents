@@ -14,7 +14,6 @@ Jupyter Notebook에서 EDA, 통계적 가설 검정을 진행한 프로젝트입
 | `table.sql` | PostgreSQL 테이블 생성 및 공간데이터(geometry) 변환 스크립트 |
 | `view.sql` | 사고 건수 / 사망자·사망률 기반 뷰(View) 생성 |
 | `data_analysis.ipynb` | EDA(탐색적 데이터 분석) 및 통계 분석 노트북 |
-| `gis.csv` | 원본 교통사고 위험지역 데이터 |
 
 
 

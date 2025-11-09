@@ -1,23 +1,11 @@
-# 🚦 Seoul Traffic Accident Risk Area Analysis
+# Seoul Traffic Accident Risk Area Analysis
 
 서울특별시의 자치구별 교통사고 다발 지역 데이터를 수집하고,  
 PostgreSQL(PostGIS) 및 QGIS를 활용하여 시각화하였고, 
 Jupyter Notebook에서 EDA, 통계적 가설 검정을 진행한 프로젝트입니다.
 
 
-
-## 📂 파일 구성
-
-| 파일명 | 설명 |
-|--------|------|
-| `open_api.ipynb` | 공공데이터 포털(Open API)로부터 사고위험지역 데이터 수집 |
-| `table.sql` | PostgreSQL 테이블 생성 및 공간데이터(geometry) 변환 스크립트 |
-| `view.sql` | 사고 건수 / 사망자·사망률 기반 뷰(View) 생성 |
-| `data_analysis.ipynb` | EDA(탐색적 데이터 분석) 및 통계 분석 노트북 |
-
-
-
-## 🗺️ 데이터 개요
+## 데이터 개요
 
 - **출처:** [도로교통공단 교통사고 위험지역 OpenAPI](https://opendata.koroad.or.kr/api/selectAcdntRiskAreaDataSet.do)  
 - **범위:** 서울특별시 25개 자치구  
@@ -25,7 +13,7 @@ Jupyter Notebook에서 EDA, 통계적 가설 검정을 진행한 프로젝트입
 
 
 
-## 🔍 분석 내용 요약
+## 분석 내용 요약
 
 1. **기초 EDA**  
    - 데이터프레임의 구조와 컬럼들의 분포, 그리고 결측치와 고유값 등을 확인
@@ -42,7 +30,7 @@ Jupyter Notebook에서 EDA, 통계적 가설 검정을 진행한 프로젝트입
 
 
 
-## 🧭 QGIS 시각화
+## QGIS 시각화
 
 - PostGIS 기반 뷰(`vw_gis_accident_frequency`, `vw_gis_accident_fatality`)를 불러와  
   **사고 위험도 단계(7단계 색상 등급)** 로 시각화  
